@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors Assignment</title>
+</head>
+
+<body>
+
+    <h1>Rock, Paper, Scissors Assignment</h1>
+
+    <h2>Overview</h2>
+    <p>
+        In this assignment, you will create a <strong>Rock, Paper, Scissors</strong> game using JavaScript.
+        The player will type a choice, the computer will generate a random choice, and your program will
+        determine the winner using <strong>conditional statements</strong>.
+    </p>
+
+    <h2>Learning Goals</h2>
+    <ul>
+        <li>Use <code>prompt()</code> to collect user input</li>
+        <li>Use <code>Math.random()</code> and <code>Math.floor()</code> to generate random results</li>
+        <li>Use <code>if / else if / else</code> statements to compare values</li>
+        <li>Use <code>alert()</code> to display results clearly</li>
+    </ul>
+
+    <h2>Set Up</h2>
+    <ol>
+        <li>Create a new folder for this assignment.</li>
+        <li>Create a JavaScript file named: <code>rockPaperScissors.js</code></li>
+        <li>Create an <code>index.html</code> file.</li>
+        <li>Generate the HTML template (type <code>!</code> then press Enter).</li>
+        <li>Connect your JavaScript file using: <code>&lt;script src="rockPaperScissors.js"&gt;&lt;/script&gt;</code></li>
+    </ol>
+
+    <h2>Game Rules</h2>
+    <ul>
+        <li>If both choices match, the result is a <strong>tie</strong>.</li>
+        <li><strong>Rock</strong> beats <strong>Scissors</strong>.</li>
+        <li><strong>Paper</strong> beats <strong>Rock</strong>.</li>
+        <li><strong>Scissors</strong> beats <strong>Paper</strong>.</li>
+    </ul>
+
+    <h2>Base Requirements (Required)</h2>
+    <p>
+        Your base game should play <strong>one round</strong> when the page loads or refreshes.
+    </p>
+    <ol>
+        <li>Prompt the player to enter <code>rock</code>, <code>paper</code>, or <code>scissors</code>.</li>
+        <li>Generate a random computer choice using <code>Math.random()</code> and <code>Math.floor()</code>.</li>
+        <li>Use <code>if / else if / else</code> statements to determine if the player wins, loses, or ties.</li>
+        <li>Use <code>alert()</code> to show:
+            <ul>
+                <li>Player choice</li>
+                <li>Computer choice</li>
+                <li>Win / Lose / Tie result</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>JavaScript Starter Template (Required)</h2>
+    <p>
+        Copy and paste the template below into <code>rockPaperScissors.js</code>. Complete each step using the comments.
+    </p>
+
+    <pre><code>// ------------------------------------
+// ROCK, PAPER, SCISSORS (ONE ROUND)
+// Student Starter Code
+// ------------------------------------
+
+/*
+STEP 1: PLAYER CHOICE
+Prompt the player to choose:
+"rock", "paper", or "scissors"
+Store the answer in a variable.
+Make sure the input is lowercase.
+*/
+
+
+/*
+STEP 2: COMPUTER CHOICE
+Generate a random number that represents the computer's choice.
+Use Math.random() and Math.floor().
+Create a variable named computerChoice.
+*/
+
+
+/*
+STEP 3: ASSIGN COMPUTER CHOICE
+Use if / else if / else to convert the random number into:
+"rock", "paper", or "scissors"
+Store the result in computerChoice.
+*/
+
+
+/*
+STEP 4: GAME LOGIC
+Use if / else if / else to determine:
+- tie
+- player win (rock>scissors, paper>rock, scissors>paper)
+- otherwise computer win
+*/
+
+
+/*
+STEP 5: DISPLAY RESULT
+Use alert() to show:
+- player choice
+- computer choice
+- result (win/lose/tie)
+*/</code></pre>
+
+    <h2>Challenge Extension (Optional): Best-of-3</h2>
+    <p>
+        If you finish early and your base game works, upgrade your game to <strong>Best-of-3</strong>.
+        This means the game plays <strong>three rounds</strong>, tracks score, and announces the final winner.
+    </p>
+
+    <h3>Challenge Requirements</h3>
+    <ol>
+        <li>Create two score variables: <code>playerScore</code> and <code>computerScore</code>.</li>
+        <li>Create a function named <code>playRound(roundNumber)</code> that plays one round and updates the score.</li>
+        <li>Call <code>playRound(1)</code>, <code>playRound(2)</code>, and <code>playRound(3)</code>.</li>
+        <li>After three rounds, alert the final match winner and the final score.</li>
+    </ol>
+
+    <h3>Challenge Starter Template (Optional)</h3>
+    <pre><code>// ------------------------------------
+// CHALLENGE: BEST OF 3 (OPTIONAL)
+// ------------------------------------
+
+/*
+Create:
+- playerScore = 0
+- computerScore = 0
+*/
+
+/*
+Create a function playRound(roundNumber) that:
+- gets player choice
+- gets computer choice
+- determines winner
+- updates score
+- alerts the round result
+*/
+
+/*
+Call:
+playRound(1)
+playRound(2)
+playRound(3)
+
+Then alert the final winner + final scores
+*/</code></pre>
+
+    <h2>Checklist (Before You Submit)</h2>
+    <ul>
+        <li>My base game plays one full round and works on refresh.</li>
+        <li>I used <code>prompt()</code> and <code>alert()</code> correctly.</li>
+        <li>I used <code>Math.random()</code> and <code>Math.floor()</code> for the computer choice.</li>
+        <li>I used conditional statements to determine win/lose/tie.</li>
+        <li>(Optional) I completed Best-of-3 with score tracking.</li>
+    </ul>
+
+    <h2>Submit the Assignment</h2>
+    <p>
+        Submit your completed JavaScript file: <code>rockPaperScissors.js</code>
+    </p>
+
+    <script src="rockPaperScissors.js"></script>
+
+</body>
+</html>
