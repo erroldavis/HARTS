@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert Delegation Assignment</title>
+</head>
+
+<body>
+
+    <h1>Dessert Delegation Assignment</h1>
+
+    <h2>Overview</h2>
+    <p>
+        In this assignment, you will build a dessert delegation system for an imaginary bakery.
+        A customer receives a random ticket number, which assigns them a ticket color. That ticket
+        color then determines which dessert the customer gets.
+    </p>
+    <p>
+        You will combine what you’ve learned about <strong>conditional statements</strong> with
+        the <strong>Math</strong> object and its methods.
+    </p>
+
+    <h2>Set Up</h2>
+    <ol>
+        <li>Create a new folder to store this assignment.</li>
+        <li>Inside the folder, create a JavaScript file named: <code>dessertDelegation.js</code></li>
+        <li>Create an <code>index.html</code> file.</li>
+        <li>
+            Add the HTML template (type <code>!</code> then press Enter, or use <code>html:5</code>).
+        </li>
+        <li>
+            Change the title to <strong>Dessert Delegation</strong> and connect your JavaScript file
+            with this script tag:
+            <code>&lt;script src="dessertDelegation.js"&gt;&lt;/script&gt;</code>
+        </li>
+    </ol>
+
+    <h2>JavaScript Instructions</h2>
+    <p>
+        Copy and paste the template below into <code>dessertDelegation.js</code>. Follow the comments
+        and complete each section.
+    </p>
+
+    <pre><code>/*
+TICKET VARIABLE
+Underneath this comment create a variable called ticket but do not assign it a value.
+*/
+
+/*
+CREATE A NEW FUNCTION
+Underneath these comments create a function called ticketDistributor.
+
+GENERATE A RANDOM NUMBER
+Within this function create a new randomNumber variable.
+Then use the appropriate Math methods to generate a random number.
+This random number should be greater than or equal to 0 and less than or equal to 10.
+
+ASSIGN A TICKET
+Within the ticketDistributor function create a conditional statement.
+This conditional statement should assign a specific color ticket to the ticket variable based on the random number generated.
+
+- If the random number is 0–3, assign the customer a red ticket.
+- If the random number is 4–7, assign the customer a green ticket.
+- If the random number is 8–10, assign the customer a blue ticket.
+
+Then return the ticket variable for each condition.
+
+CALL THE FUNCTION
+Make sure to call the ticketDistributor() function.
+
+Note: If you want to see what's happening, use console.log() to log the random number and ticket.
+*/
+
+/*
+ASSIGN THE DESSERT
+Create a new conditional statement that assigns a specific dessert based on the ticket.
+Use alert() methods to let the customer know what dessert they've been assigned.
+
+- If the ticket is red, the customer gets a cookie.
+- If the ticket is green, the customer gets a brownie.
+- If the ticket is blue, the customer gets ice cream cake.
+
+Make sure the ticket color spelling matches exactly between the ticketDistributor() function
+and this conditional statement.
+*/</code></pre>
+
+    <h2>Checklist</h2>
+    <ul>
+        <li>Create a <code>ticket</code> variable (no value assigned yet).</li>
+        <li>Create a <code>ticketDistributor()</code> function.</li>
+        <li>Generate a random integer from <code>0</code> to <code>10</code> (inclusive).</li>
+        <li>Assign a ticket color based on the random number:
+            <ul>
+                <li><strong>0–3</strong> → red</li>
+                <li><strong>4–7</strong> → green</li>
+                <li><strong>8–10</strong> → blue</li>
+            </ul>
+        </li>
+        <li>Call <code>ticketDistributor()</code>.</li>
+        <li>Use another conditional statement to assign a dessert based on the ticket color.</li>
+        <li>Use <code>alert()</code> to tell the customer what dessert they get.</li>
+    </ul>
+
+    <h2>Submit the Assignment</h2>
+    <p>
+        Submit your completed JavaScript file: <code>dessertDelegation.js</code>
+    </p>
+
+    <!-- Connect JavaScript at the end so the page loads first -->
+    <script src="dessert.js"></script>
+
+</body>
+</html>
