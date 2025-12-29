@@ -30,7 +30,7 @@ body {
     width: 100%;
     height: 100%;
     margin: 0; /* removes default browser margin */
-    background-color: #2a9d8f;
+    background-color: #011412;
     font-family: pixelOperator, sans-serif;
 }
 
@@ -42,6 +42,7 @@ Uses the bold pixel font and a large font size.
 h1 {
     font-family: pixelOperatorBold, sans-serif;
     font-size: 4rem;
+    color: rgb(6, 97, 36);
 }
 
 
@@ -65,7 +66,7 @@ It is centered on the screen using position + transform.
     flex-direction: column;
     align-items: center;
 
-    background-color: #FFF;
+    background-color: #131212;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 15px;
 }
@@ -90,6 +91,7 @@ Flexbox is used to center everything vertically and horizontally.
 
     font-size: 4rem;
     font-family: pixelOperatorBold;
+   
 }
 
 /*
@@ -100,6 +102,7 @@ Used for instructions or subheadings.
 #mainContainer h3 {
     font-size: 1.5rem;
     font-family: pixelOperator;
+    color: rgb(161, 21, 21);
 }
 
 
@@ -116,8 +119,9 @@ The border makes it visible as a game area.
     height: 96px;
     display: flex;
     margin: 0 auto;
-    background-color: #FFF;
+    background-color: #b1d8b3;
     border: 1px solid #000;
+    color: black;
 }
 
 /*
@@ -150,10 +154,11 @@ Flexbox allows the letters to wrap into rows automatically.
     justify-content: space-evenly;
     align-items: center;
 
-    background-color: #FFF;
+    background-color: #202421;
     border-radius: 8px;
     border: 1px solid #000;
     font-family: pixelOperator;
+    
 }
 
 /*
@@ -172,6 +177,7 @@ Box-shadow creates a "button popping out" effect.
     margin: 8px;
     border: 1px solid #2a9d8f;
     box-shadow: 6px 6px #2a9d8f;
+    color: rgb(5, 32, 119);
 }
 
 /*
@@ -199,7 +205,7 @@ to show correct and incorrect guesses.
 
 .correctLetter {
     color: #000;
-    background-color: #C7FFC2;
+    background-color: #56f048;
     box-shadow: 2px 2px #30526B;
 }
 
@@ -226,6 +232,7 @@ It starts hidden and becomes visible using JavaScript.
     background-color: #FFF;
     border: 2px solid #30526B;
     font-size: 2rem;
+    color: rgb(197, 23, 23);
 
     visibility: hidden; /* hidden until game ends */
 }
@@ -238,6 +245,7 @@ Paragraph text inside the game over screen.
     font-size: 24px;
     font-family: pixelOperator;
     padding: 8px;
+    color: rgb(226, 108, 12);
 }
 
 
@@ -247,6 +255,7 @@ Paragraph text inside the game over screen.
 
 #gameOverStatus {
     margin: 24px;
+    color: rgb(88, 5, 5);
 }
 
 #gameOverStatus h3 {
@@ -267,7 +276,7 @@ Uses box-shadow for a clickable button effect.
 
     font-family: pixelOperator;
     font-size: 2rem;
-    background-color: #C7FFC2;
+    background-color: #3d743b;
 }
 
 /*
