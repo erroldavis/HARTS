@@ -88,6 +88,11 @@ document.addEventListener("keydown", (e) => {
 
   if (e.key.toLowerCase() === "r") {
     restartGame();
+    state = GameState.PLAYING;
+
+    bgMusic.currentTime = 0;
+    bgMusic.play();
+
   }
 });
 
@@ -408,8 +413,6 @@ function restartGame() {
 
   wasCollidingLastFrame = false;
 
-  // Return to start or directly play (your choice)
-  state = GameState.START;
 }
 
 // ====== Utility Helpers ======
