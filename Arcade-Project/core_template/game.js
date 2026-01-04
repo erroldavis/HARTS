@@ -23,6 +23,18 @@ const PROJECT_INFO = {
   gameTitle: "My Arcade Game"
 };
  
+/*******************************************************
+ * AUDIO
+ *******************************************************/
+const hitSound = new Audio("audio/hit.wav");
+const deathSound = new Audio("audio/death.wav");
+const bgMusic = new Audio("audio/bg_music.mp3");
+
+bgMusic.loop = true;
+bgMusic.volume = 0.4;   // background music softer
+hitSound.volume = 0.7;
+deathSound.volume = 0.8;
+
 
 // ====== Canvas Setup ======
 const canvas = document.getElementById("gameCanvas");
@@ -59,14 +71,15 @@ document.addEventListener("keydown", (e) => {
 
   // Quick controls
   if (e.key === "Enter") {
-    if (state === GameState.START) {
-        restartGame();           // sets up hazards + resets everything
-        state = GameState.PLAYING;
-    } else if (state === GameState.GAME_OVER) {
+    if (state === GameState.START || state === GameState.GAME_OVER) {
         restartGame();
         state = GameState.PLAYING;
+
+        bgMusic.currentTime = 0;
+        bgMusic.play();
     }
   }
+
 
 
   if (e.key.toLowerCase() === "p") {
@@ -212,12 +225,20 @@ function handleCollisions() {
   if (collidingThisFrame && !wasCollidingLastFrame) {
     lives--;
 
+    hitSound.currentTime = 0;
+    hitSound.play();
+
     player.x = 100;
     player.y = canvas.height / 2 - player.h / 2;
 
     if (lives <= 0) {
       lives = 0;
       state = GameState.GAME_OVER;
+
+      bgMusic.pause();
+      deathSound.currentTime = 0;
+      deathSound.play();
+
     }
   }
 
@@ -363,8 +384,10 @@ function drawCenterMessage(title, subtitle) {
 function togglePause() {
   if (state === GameState.PLAYING) {
     state = GameState.PAUSED;
+    bgMusic.pause();
   } else if (state === GameState.PAUSED) {
     state = GameState.PLAYING;
+    bgMusic.play();
   }
 }
 
